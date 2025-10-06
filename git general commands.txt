@@ -1,7 +1,7 @@
 go to folder and right click to open git bash here
 git will open
-type git init
-git remote add origin repository url
-git add -A to add all files to local 
-git commit -m "message" -to commit code to git 
-git push -u origin master -to send code to github 
+type: git init
+git remote add origin repository url :-connect local repo to remote repo
+git add -A   :- to add all files to local 
+git commit -m "message" :-to commit code to git 
+git push -u origin master :-to send code to github 
