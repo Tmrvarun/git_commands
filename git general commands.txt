@@ -5,3 +5,20 @@ git remote add origin repository url :-connect local repo to remote repo
 git add -A   :- to add all files to local 
 git commit -m "message" :-to commit code to git 
 git push -u origin master :-to send code to github 
+
+------------
+For playwright we use the below commands:
+
+git config --global user.name "username"
+git config --global user.email "email"
+git init
+git remote add origin repo url
+git add . //this command is used to add the local files to the git stage , which is one step below the git server
+or 
+git add test/testexample.spec.ts // to add particular file to git
+or
+git add test/     // to add particuler folder to git
+
+git commit -m 'message'
+git branch -M main // for first time we create main branch and through this brance we create sub-branches which can be used for local work
+git push -u origin main
