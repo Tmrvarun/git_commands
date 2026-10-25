@@ -22,3 +22,26 @@ git add test/     // to add particuler folder to git
 git commit -m 'message'
 git branch -M main // for first time we create main branch and through this brance we create sub-branches which can be used for local work
 git push -u origin main
+
+------------
+
+To clone fetch and pull change request: 
+Suppose there is a new joiner in a team and he want to know about a framework
+First thing he will do is , cloning the framwork , he will go the drive where he want to save his copy of framwork
+then he will install playwright dependencies 
+then he will make changes to his files , changes will be denoted by M-modified ,U-untouched
+then he will add the files to local git storage , commit and push 
+
+git clone repo-url
+npx install @playwright/test
+git add.
+git commit -m 'message'
+git branch -M main
+git push -u orign main
+
+Now after these changes are stored then suppose i want to fetch the changes to my local machine , in order to make my framwork up to date , i will fetch the changes and then pull the updated code to my local
+git status 
+git fetch //it is a kind of notification command to check what new changes has been made 
+git pull // it wil pull all the changes and will merge them in the existing framework
+
+
