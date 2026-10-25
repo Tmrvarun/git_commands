@@ -36,12 +36,11 @@ git clone repo-url
 npx install @playwright/test
 git add.
 git commit -m 'message'
-git branch -M main
-git push -u orign main
+git push orign main
 
 Now after these changes are stored then suppose i want to fetch the changes to my local machine , in order to make my framwork up to date , i will fetch the changes and then pull the updated code to my local
 git status 
 git fetch //it is a kind of notification command to check what new changes has been made 
-git pull // it wil pull all the changes and will merge them in the existing framework
+git pull // it wil pull all the changes from github and will merge them in the existing framework
 
 
