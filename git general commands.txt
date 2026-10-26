@@ -32,6 +32,7 @@ then he will install playwright dependencies
 then he will make changes to his files , changes will be denoted by M-modified ,U-untouched
 then he will add the files to local git storage , commit and push 
 
+cd..
 git clone repo-url
 npx install @playwright/test
 git add.
