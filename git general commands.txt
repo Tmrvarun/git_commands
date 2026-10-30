@@ -44,4 +44,52 @@ git status
 git fetch //it is a kind of notification command to check what new changes has been made 
 git pull // it wil pull all the changes from github and will merge them in the existing framework
 
+---------------
+
+Create new branch , merge and delete a branch
+
+All team members did not work on main branch , so they create a branch over which they make changes and after making changes they merge it into main branch
+
+git branch 
+git branch feature/new-branch
+or 
+git checkout branch -b feature/new-branch
+
+//the above commands checks for new branches and creats a new branch with name 'feature/new-branch' and checkout will take you to that branch
+
+make changes to the branch , then in that branch,add changes to stage , commit changes and then push changes to git hub
+
+git add .
+git commit -m 'chnages to branch'
+git push -u origin feature/new-branch
+
+Now the user b , will switch to new branch and will fetch the changes made in the new branch 
+
+
+git fetch 
+git branch -a // this will give the list of all branches present for main branches
+git checkout feature/new-branch
+
+after making changes to branch user will again add changes to stage , commit changes and then push changes to git hub
+
+git add .
+git commit -m 'changes to branch'
+git push -u origin feature/new-branch
+
+after making changes , the user merge the changes to new branch
+
+git checkout main 
+git merge feature/new-branch
+git push origin main 
+
+Branch delete :
+
+git branch -d feature/new-branch
+git push origin --delete feature/new-branch
+
+
+
+
+
+
 
